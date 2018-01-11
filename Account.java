@@ -3,9 +3,9 @@ public class Account {
 	 private String name;
 	 private int acctNum;
 	 
-	 //----------------------------------------------
-	 //Constructor -- initializes balance, owner, and account number
-	 //----------------------------------------------
+	 /**
+	  * Constructor -- initializes balance, owner, and account number
+	  */
 	 public Account(double initBal, String owner, int number) {
 		 balance = initBal;
 		 name = owner;
@@ -23,10 +23,10 @@ public class Account {
 		 balance = 0;
 		 acctNum = (int)(1000*Math.random()) + 1000;
 	 }
-	 //----------------------------------------------
-	 // Checks to see if balance is sufficient for withdrawal.
-	 // If so, decrements balance by amount; if not, prints message.
-	 //----------------------------------------------
+	 /**
+	  * Checks to see if balance is sufficient for withdrawal.
+	  * If so, decrements balance by amount; if not, prints message.
+	  */
 	 public void withdraw(double amount) {
 		 if (balance >= amount) {
 			 balance -= amount;
@@ -48,22 +48,22 @@ public class Account {
 			 System.out.println("Insufficient funds");
 	 }
 	 
-	 //----------------------------------------------
-	 // Adds deposit amount to balance.
-	 //----------------------------------------------
+	 /**
+	  * Adds deposit amount to balance.
+	  */
 	 public void deposit(double amount) {
 		 balance += amount;
 	 }
 	 
-	 //----------------------------------------------
-	 // Returns balance.
-	 //----------------------------------------------
+	 /**
+	  * Returns balance.
+	  */
 	 public double getBalance() {
 		 return balance;
 	 }
-	//----------------------------------------------
-	 // Returns account name.
-	 //----------------------------------------------
+	/**
+	  * Returns account name.
+	  */
 	 public String getName(){
 		 return name;
 	 }
@@ -74,3 +74,4 @@ public class Account {
 	 }
 
 }
+
