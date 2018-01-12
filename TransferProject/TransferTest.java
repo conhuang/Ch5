@@ -24,9 +24,9 @@ public class TransferTest
                 acct1.transfer(acct2,y);
             else
                 acct2.transfer(acct1,y);
-            System.out.println("\nNew balance for "+acct1.getName()+": " +
+            System.out.println("\nNew balance for "+acct1.getName()+": $" +
                                 String.format("%.2f",acct1.getBalance()));
-            System.out.println("New balance for "+acct2.getName()+": " +
+            System.out.println("New balance for "+acct2.getName()+": $" +
                                 String.format("%.2f",acct2.getBalance()));
             System.out.print("\n1 - Transfer from "+acct1.getName()+" to "+ acct2.getName()+
                                "'s account.\n2 - Transfer from " + acct2.getName()+
@@ -47,9 +47,9 @@ public class TransferTest
                 Account.transfer(acct1,acct2,y);
             else
                 Account.transfer(acct2,acct1,y);
-            System.out.println("\nNew balance for "+acct1.getName()+": " +
+            System.out.println("\nNew balance for "+acct1.getName()+": $" +
                                 String.format("%.2f",acct1.getBalance()));
-            System.out.println("New balance for "+acct2.getName()+": " +
+            System.out.println("New balance for "+acct2.getName()+": $" +
                                 String.format("%.2f",acct2.getBalance()));
             System.out.print("\n1 - Transfer from "+acct1.getName()+" to "+ acct2.getName()+
                                "'s account.\n2 - Transfer from " + acct2.getName()+
